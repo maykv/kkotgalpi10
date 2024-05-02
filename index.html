@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'HSBombaram21-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            background-color: #F0ECE3;
+            font-family: 'HSBombaram21-Regular';
+            font-weight: 100;
+            color:#525023;
+            text-decoration-line: none;
+        }
+
+        .title span {
+          display: inline-block;
+          color: #F0ECE3;
+          animation: colorChange 1s forwards;
+        }
+        
+        .title span {
+          display: inline-block;
+          color: #F0ECE3; 
+          animation: colorChange 1s forwards; 
+        }
+        
+        @keyframes colorChange {
+          to {
+            color:#525023; 
+          }
+        }
+
+        
+
+
+        .tg a {
+            text-decoration-line: none;
+            color:#525023;
+        }
+        .tg a:hover{
+            color:#242310;
+        }
+
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-w2qg{border-color:#f0ece3;color:#525023;font-family:inherit;text-align:left;vertical-align:top}
+    </style>
+</head>
+<body>
+    <h1 class="title">꽃갈피</h1>
+    <h3>2014년 5월 16일<br>10주년</h3>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const title = document.querySelector('.title');
+    const text = title.textContent;
+    const textArr = text.split('');
+
+       title.textContent = ''; 
+
+       textArr.forEach((char, index) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.animationDelay = `${0.3 * index}s`;
+      title.appendChild(span);
+        });
+    })  ;
+
+     </script>   
+    <style type="text/css">
+
+        </style>
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-w2qg">1</th>
+            <th class="tg-w2qg"><a href="track/1.html">나의 옛날이야기</a></th>
+            <th class="tg-w2qg">2</th>
+            <th class="tg-w2qg"><a href="track/2.html">꽃</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-w2qg">3</td>
+            <td class="tg-w2qg"><a href="track/3.html">삐에로는 우릴 보고 웃지</a></td>
+            <td class="tg-w2qg">4</td>
+            <td class="tg-w2qg"><a href="track/4.html">사랑이 지나가면</a></td>
+          </tr>
+          <tr>
+            <td class="tg-w2qg">5</td>
+            <td class="tg-w2qg"><a href="track/5.html">너의 의미 <br><small>(Feat. 김창완)</small></a></td>
+            <td class="tg-w2qg">6</td>
+            <td class="tg-w2qg"><a href="track/6.html">여름밤의 꿈</a></td>
+          </tr>
+          <tr>
+            <td class="tg-w2qg">7</td>
+            <td class="tg-w2qg"><a href="track/7.html">꿍따리 샤바라 <br><small>(Feat. 클론)</small></a></td>
+            <td class="tg-w2qg">8</td>
+            <td class="tg-w2qg"><a href="track/8.html">어허야 둥기둥기<br><small>LP Only</small></a></td>
+          </tr>
+        </tbody>
+        </table>
+</body>
+</html>
